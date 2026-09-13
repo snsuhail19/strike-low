@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>STRIKE//LOW — Multiplayer FPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu" class="panel">
+    <h1>STRIKE<span>//LOW</span></h1>
+    <p>Lightweight browser FPS • multiplayer prototype</p>
+    <input id="name" maxlength="16" placeholder="Your player name">
+    <button id="quick">QUICK MATCH</button>
+    <div class="row">
+      <input id="room" maxlength="8" placeholder="ROOM CODE">
+      <button id="create">CREATE</button>
+      <button id="join">JOIN</button>
+    </div>
+    <small>Open this site in two browser tabs to test multiplayer locally.</small>
+    <div id="status"></div>
+  </div>
+
+  <canvas id="game"></canvas>
+  <div id="hud">
+    <div class="top"><b>STRIKE//LOW</b><span id="roomLabel"></span><span id="playersLabel"></span></div>
+    <div id="crosshair">+</div>
+    <div class="bottom">
+      <div><b id="hp">100</b> HP</div>
+      <div id="weapon">PISTOL</div>
+      <div class="weapons">1 PISTOL &nbsp; 2 SMG &nbsp; 3 RIFLE &nbsp; 4 SHOTGUN</div>
+    </div>
+    <div id="feed"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
